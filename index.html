@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Техномарт</title>
 </head>
 <body>
     <header class="main-header">
         <section class="container-header">
-            <ul class="main-header-basket"><!--пока не знаю что с этим делать-->
-                <li><a href="main-header-logo">Техномарт</a></li>
-                <li><a href="main-header-quest">Поиск</a></li>
-                <li><a href="main-header-bookmarks">Закладки</a></li>
-                <li><a href="main-header-basket">Корзина</a></li>
-                <li><a href="main-header-checkout">Оформить заказ</a></li>
+            <ul class="main-header"><!--пока не знаю что с этим делать-->
+                <li class="main-header-logo">
+                    <a href="#">Техномарт</a>
+                </li>
+                <li class="main-header-search">
+                    <a href="#">Поиск:</a>
+                </li>
+                <li class="main-header-bookmarks">
+                    <a href="#">Закладки</a>
+                    <!--число рядом должно изменяться, надо над этим поработать-->
+                </li>
+                <li class="main-header-basket">
+                    <a href="#">Корзина</a>
+                     <!--число рядом должно изменяться, надо над этим поработать-->
+                </li>
+                <li class="main-header-checkout">
+                    <a href="#">Оформить заказ</a>
+                    <!--должно выйти окошко с формой-->
+                </li>
             </ul>
             <div class="info">
                 <p>Интернет-магазин
@@ -43,8 +56,13 @@
         </section>
     </header>
     <main>
-        <section class="services">
-            <h1>Услуги</h1>
+        <h1 class="visually-hidden">Техномарт</h1>
+
+        <section class="offers">
+
+
+            <h2 class="visually-hidden">Наши предложения</h2>
+
             <article class="sex-men">
                 <figure>
                     <a href="#"><img src="#" alt="Парень с дрелью"></a>
@@ -55,11 +73,12 @@
                 <span class="button men-button men-button-next"></span>
                 <a href="#" class="button">Открыть Каталог</a>
             </article>
-            <section >
-                <ul>
-                    <li>
+
+                <ul class="offers-list">
+                    <li class="offers-item">
+                        <p class="new">new</p>
                         <p>Материалы</p>
-                        <!--иконка, возможно лучше фоном прописать-->
+                        <!--иконка, лучше фоном прописать-->
                         <a href="#">На любой вкус</a>
                     </li>
                     <li>
@@ -67,11 +86,11 @@
                         <a href="#">На все случаи</a>
                     </li>
                     <li>
-                        <p>Материалы</p>
+                        <p>Техника</p>
                         <a href="#">Для стойки</a>
                     </li>
                     <li>
-                        <p>Материалы</p>
+                        <p>Скидка 50%</p>
                         <a href="#">На 350 товаров</a>
                     </li>
                     <li>
@@ -79,21 +98,80 @@
                         <a href="#">Бесплатно</a>
                     </li>
                 </ul>
-            </section>
         </section>
+
         <section class="goods">
-            <h1>Товары</h1>
+            <h2 class="visually-hidden">Товары</h2>
             <div class="popular">
-                <h2>Популярные товары:</h2>
+                <h3>Популярные товары:</h3>
                 <a href="#" class="button">Все популярные товары</a>
             </div>
-            <ul class="drill">
-                    <li>
-                        <a></a>
+
+            <ul class="perforator-list">
+                    <li class="perforator-item">
+                        <img src="#" alt="Перфоратор BOSCH 9000">
+                        <h3>Перфоратор BOSCH BFG 9000</h3>
+                        <p class="old-price">32500 P.</p>
+                        <p class="new-price">25500 P.</p>
+                        <!--при наведении на карточку товара она получает тень и кнопки вместо фото-->
+                    </li>
+                    <li class="perforator-item">
+                        <img src="#" alt="Перфоратор BOSCH 3000">
+                        <h3>Перфоратор BOSCH BFG 3000</h3>
+                        <p class="old-price">22500 P.</p>
+                        <p class="new-price">15500 P.</p>
+                        <!--при наведении на карточку товара она получает тень и кнопки вместо фото-->
+                    </li>
+                    <li class="perforator-item">
+                        <img src="#" alt="Перфоратор BOSCH 6000">
+                        <h3>Перфоратор BOSCH BFG 6000</h3>
+                        <p class="old-price">30500 P.</p>
+                        <p class="new-price">25500 P.</p>
+                    </li>
+                    <li class="perforator-item">
+                        <p class="new">new</p>
+                        <img src="#" alt="Перфоратор BOSCH 2000">
+                        <h3>Перфоратор BOSCH BFG 2000</h3>
+                        <p class="new-price">15500 P.</p>
                     </li>
                 </ul>
-                
         </section>
+
+        <section class="producer">
+            <h2 class="visually-hidden">Производители</h2>
+                <div class="popular">
+                    <h3>Популярные производители:</h3>
+                    <a href="#" class="button">Все производители</a>
+                </div>
+                <ul class="producer-list">
+                    <li class="produser-item">
+                        <img src="#" alt="bosch">
+                    </li>
+                    <li class="produser-item">
+                        <img src="#" alt="makita">
+                    </li>
+                    <li class="produser-item">
+                        <img src="#" alt="dewalt">
+                    </li>
+                    <li class="produser-item">
+                        <img src="#" alt="интерскол">
+                    </li>
+                    <li class="produser-item">
+                        <img src="#" alt="hitachi">
+                    </li>
+                    <li class="produser-item">
+                        <img src="#" alt="LG">
+                    </li>
+                    <li class="produser-item">
+                        <img src="#" alt="AEG">
+                    </li>
+                    <li class="produser-item">
+                        <img src="#" alt="metabo">
+                    </li>
+                </ul>
+        </section>    
+
+        <section class=""
     </main>
 </body>
 </html>
