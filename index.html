@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,10 @@
     <title>Техномарт</title>
 </head>
 <body>
-    <header class="main-header">
-        <section class="container-header">
+    <header class="header">
             <ul class="main-header"><!--пока не знаю что с этим делать-->
                 <li class="main-header-logo">
-                    <a href="#">Техномарт</a>
+                    <a href="#">Техномарт</a><!--возможно вставить h1 в а и убрать h1 с 55 строчки-->
                 </li>
                 <li class="main-header-search">
                     <a href="#">Поиск:</a>
@@ -33,13 +32,11 @@
                 <p>Интернет-магазин
                 строительных материалов
                 и инструментов для ремонта</p>
-                <p class="nomber">+7(812)555-05-55</p>
+                <p class="number">+7(812)555-05-55</p>
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <ul>
-                    <li class="login-link">Войти</li>
-                </ul>
-                <ul>
-                    <li class="login-new">Регистрация</li>
+                <ul class="login">
+                    <li><a  href="#" >Войти</a></li><!--вставить картинку в бекфон-->
+                    <li><a href="#" >Регистрация</a></li>
                 </ul>
             </div>
             <nav class="main-navigation">
@@ -53,14 +50,10 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-        </section>
     </header>
-    <main>
+    <main class="container">
         <h1 class="visually-hidden">Техномарт</h1>
-
         <section class="offers">
-
-
             <h2 class="visually-hidden">Наши предложения</h2>
 
             <article class="sex-men">
@@ -69,8 +62,8 @@
                 </figure>
                 <b>Дрели</b><!--думаю нужна ли тут тег б-->
                 <p>Соседям на радость !</p>
-                <span class="button men-button men-button-back"></span>
-                <span class="button men-button men-button-next"></span>
+                <button class="button men-button men-button-back"></button>
+                <button class="button men-button men-button-next"></button>
                 <a href="#" class="button">Открыть Каталог</a>
             </article>
 
@@ -101,9 +94,8 @@
         </section>
 
         <section class="goods">
-            <h2 class="visually-hidden">Товары</h2>
             <div class="popular">
-                <h3>Популярные товары:</h3>
+                <h2>Популярные товары:</h2>
                 <a href="#" class="button">Все популярные товары</a>
             </div>
 
@@ -111,62 +103,60 @@
                     <li class="perforator-item">
                         <img src="#" alt="Перфоратор BOSCH 9000">
                         <h3>Перфоратор BOSCH BFG 9000</h3>
-                        <p class="old-price">32500 P.</p>
-                        <p class="new-price">25500 P.</p>
+                        <span class="old-price">32500 P.</span>
+                        <span class="new-price">25500 P.</span>
                         <!--при наведении на карточку товара она получает тень и кнопки вместо фото-->
                     </li>
                     <li class="perforator-item">
                         <img src="#" alt="Перфоратор BOSCH 3000">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
-                        <p class="old-price">22500 P.</p>
-                        <p class="new-price">15500 P.</p>
+                        <span class="old-price">22500 P.</span>
+                        <span class="new-price">15500 P.</span>
                         <!--при наведении на карточку товара она получает тень и кнопки вместо фото-->
                     </li>
                     <li class="perforator-item">
                         <img src="#" alt="Перфоратор BOSCH 6000">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
-                        <p class="old-price">30500 P.</p>
-                        <p class="new-price">25500 P.</p>
+                        <span class="old-price">30500 P.</span>
+                        <span class="new-price">25500 P.</span>
                     </li>
                     <li class="perforator-item">
-                        <p class="new">new</p>
                         <img src="#" alt="Перфоратор BOSCH 2000">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
-                        <p class="new-price">15500 P.</p>
+                        <span class="new-price">15500 P.</span>
                     </li>
                 </ul>
         </section>
 
         <section class="producer">
-            <h2 class="visually-hidden">Производители</h2>
                 <div class="popular">
-                    <h3>Популярные производители:</h3>
+                    <h2>Популярные производители:</h2>
                     <a href="#" class="button">Все производители</a>
                 </div>
                 <ul class="producer-list">
                     <li class="produser-item">
-                        <img src="#" alt="bosch">
+                        <a href="#"><img src="#" alt="bosch"></a>
                     </li>
                     <li class="produser-item">
-                        <img src="#" alt="makita">
+                        <a href="#"><img src="#" alt="makita"></a>
                     </li>
                     <li class="produser-item">
-                        <img src="#" alt="dewalt">
+                        <a href="#"><img src="#" alt="dewalt"></a>
                     </li>
                     <li class="produser-item">
-                        <img src="#" alt="интерскол">
+                        <a href="#"><img src="#" alt="интерскол"></a>
                     </li>
                     <li class="produser-item">
-                        <img src="#" alt="hitachi">
+                        <a href="#"><img src="#" alt="hitachi"></a>
                     </li>
                     <li class="produser-item">
-                        <img src="#" alt="LG">
+                        <a href="#"><img src="#" alt="LG"></a>
                     </li>
                     <li class="produser-item">
-                        <img src="#" alt="AEG">
+                        <a href="#"><img src="#" alt="AEG"></a>
                     </li>
                     <li class="produser-item">
-                        <img src="#" alt="metabo">
+                        <a href="#"><img src="#" alt="metabo"></a>
                     </li>
                 </ul>
         </section>    
@@ -180,8 +170,8 @@
                 <li>Гарантия</li>
                 <li>Кредит</li>
                 <!--Прописать классы сервисам-->
-                <img src="#" alt="тень">
             </ul>
+            <img src="#" alt="тень">
             <div class="delivery">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо 
@@ -217,10 +207,12 @@
             равнодушными любителей сэкономить на гастарбайтерах.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями: </p>
-            <b>Деловые линии</b>
-            <b>Автотрейдинг</b>
-            <b>ЖелДорЭкспедиция</b>
-            <a href="#" class="button">Подробнее о компании</a>
+        <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="button">Подробнее о компании</a>
         </section>
 
         <section class="contacts">
@@ -233,7 +225,7 @@
     </main>
     <footer>
         <p>Техномарт</p>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <p class="footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55</p>
         <ul class="footer-nav1">
             <li>Компания</li>
@@ -248,7 +240,7 @@
             <li>Инструменты</li>
             <li>Спецпредложения</li>
         </ul>
-        <section class="?">
+        <div class="footer-info">
             <p>© 2010–2017 Компания «Техномарт»<br>
             Все права защищены</p>
             <ul>
@@ -273,7 +265,24 @@
                 <a href="htmlacademy.ru">htmlacademy.ru</a>
             </p>
             
-        </section>
+        </div>
     </footer>
+    <form action="#" method="post">
+        <label>
+            Ваше имя:<br>
+            <input type="text" name="Ваше имя" required placeholder="Представьтесь пожалуйста">
+        </label><br>
+        <label>
+            Ваш e-mail:<br>
+            <input type="email" name="Ваш email" required placeholder="Для отправки ответа">
+        </label><br>
+        <label>
+            Текст письма:<br>
+            <textarea name="письмо" rows="5" placeholder="В свободной форме" required>
+            рнн
+            </textarea>
+        </label><br>
+        <button type="submit" value="Отправить">Отправить</button>
+    </form>
 </body>
 </html>
